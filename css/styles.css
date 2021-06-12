@@ -4,6 +4,8 @@
   --black-grey-color: #212121;
   --white-color: #ffffff;
   --grey-color: #757575;
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -62,9 +64,18 @@ body {
   color: var(--blue-color);
 }
 
+.header-nav-button {
+  position: relative;
+  transition: color var(--duration) var(--timing-function);
+}
+
 .header-nav-button:hover {
   color: var(--blue-color);
   cursor: pointer;
+}
+
+.header-nav-button a {
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-nav-button a:focus {
@@ -73,6 +84,32 @@ body {
 
 .header-nav-button:not(last-shild) {
   margin-right: 50px;
+}
+
+.header-nav-text::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.header-nav-text:hover::after,
+.header-nav-text:focus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  opacity: 1;
+  transition: opacity var(--duration) var(--timing-function);
 }
 
 .header-contacts-items {
@@ -94,6 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-contacts-button a:focus {
@@ -103,10 +141,6 @@ body {
 .header-contacts-button:hover {
   color: var(--blue-color);
   cursor: pointer;
-}
-
-.header-contacts-button:focus {
-  color: var(--blue-color);
 }
 
 .header-contacts-mail,
@@ -212,11 +246,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .footer-item:focus,
 .footer-item:hover {
-  background: var(--blue-color);
+  background-color: var(--blue-color);
 }
 
 .footer-icons {
@@ -366,6 +401,28 @@ pre {
   margin-right: 30px;
 }
 
+.three-section-items-li {
+  position: relative;
+}
+
+.three-section-items-li-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+}
+
 /* Four section */
 
 .four-section {
@@ -433,11 +490,14 @@ pre {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  transition: background-color var(--duration) var(--timing-function),
+    border-radius var(--duration) var(--timing-function),
+    var(--four-icons) var(--duration) var(--timing-function);
 }
 
 .four-section-a:focus,
 .four-section-a:hover {
-  background: var(--blue-color);
+  background-color: var(--blue-color);
   border-radius: 50% 50%;
   --four-icons: white;
   cursor: pointer;
@@ -479,6 +539,8 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border var(--duration) var(--timing-function),
+    var(--five-icons) var(--duration) var(--timing-function);
 }
 
 .five-section-a:hover,
@@ -491,6 +553,58 @@ pre {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: var(--white-color);
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  animation: modal var(--duration) var(--timing-function);
+}
+
+.modal-button-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50%;
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(114, 42, 42, 0.1);
+  background: inherit;
+}
+
+.modal-cross-close {
+  width: 11px;
+  height: 11px;
 }
 
 /* PORTFOLIO.html */
@@ -524,12 +638,16 @@ pre {
   color: var(--black-grey-color);
   padding: 6px 22px 6px 22px;
   border: none;
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function),
+    border-radius var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .portfolio-section-button:hover,
 .portfolio-section-button:focus {
   color: white;
-  background: #2196f3;
+  background-color: #2196f3;
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -547,6 +665,7 @@ pre {
   background: white;
   margin-right: 30px;
   cursor: pointer;
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .portfolio-section-two-li:hover,
@@ -561,6 +680,37 @@ pre {
 
 .portfolio-section-two-li:nth-child(-n + 6) {
   margin-bottom: 30px;
+}
+
+.portfolio-section-container-image-and-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.portfolio-section-two-li:hover .portfolio-section-overlay,
+.portfolio-section-two-li:focus .portfolio-section-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-section-text-after-image {
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
 .portfolio-section-title-and-text {
@@ -584,4 +734,15 @@ pre {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+
+/* Animation */
+
+@keyframes modal {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }

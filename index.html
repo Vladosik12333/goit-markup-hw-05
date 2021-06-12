@@ -21,13 +21,13 @@
                         <a href="#" class="header-logo-site"><span class="header-logo-apart-site">Web</span>Studio</a>
                         <ul class="header-nav-items">
                             <li class="header-nav-button"> 
-                                <a href="./index.html">Студия</a>
+                                <a class="header-nav-text" href="./index.html">Студия</a>
                             </li>
                             <li class="header-nav-button">
-                                <a href="./portfolio.html">Портфолио</a>
+                                <a class="header-nav-text" href="./portfolio.html">Портфолио</a>
                             </li>
                             <li class="header-nav-button">
-                                <a href="#">Контакты</a>
+                                <a class="header-nav-text" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,7 +60,7 @@
                     <div class="container-one-section">
                         <h1 class="one-section-title"> Эффективные решения
                         <pre>для вашего бизнеса</pre></h1>
-                        <button type="button" class="one-section-button"><span class="one-section-button-content">Заказать услугу</span></button>
+                        <button type="button" class="one-section-button" data-modal-open><span class="one-section-button-content">Заказать услугу</span></button>
                     </div>
                 </div>
             </section>
@@ -112,12 +112,15 @@
                     <ul class="three-section-items">
                         <li class="three-section-items-li">
                             <img src="./images/work1.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <p class="three-section-items-li-text" >Десктопные приложения</p>
                         </li>
                         <li class="three-section-items-li">
                             <img src="./images/work2.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <p class="three-section-items-li-text" >Мобильные приложения</p>
                         </li>
                         <li class="three-section-items-li">
                             <img src="./images/work3.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <p class="three-section-items-li-text" >Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -342,5 +345,18 @@
                     </div>
                 </div>
             </footer>
+
+        <!-- Modal -->
+        <div class="backdrop hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-button-close" data-modal-close>
+                    <svg class="modal-cross-close">
+                        <use href="./images/icons/sprite.svg#cross-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <script src="./js/modal.js"></script>
     </body>
 </html>
