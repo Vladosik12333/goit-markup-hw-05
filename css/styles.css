@@ -74,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-.header-nav-button a {
+.current .header-nav-button a {
   transition: color var(--duration) var(--timing-function);
 }
 
@@ -86,20 +86,11 @@ body {
   margin-right: 50px;
 }
 
-.header-nav-text::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-color);
-  border-radius: 2px;
-  opacity: 0;
+.current {
+  color: var(--blue-color);
 }
 
-.header-nav-text:hover::after,
-.header-nav-text:focus::after {
+.current::after {
   content: '';
   display: block;
   position: absolute;
@@ -108,8 +99,7 @@ body {
   height: 4px;
   background-color: var(--blue-color);
   border-radius: 2px;
-  opacity: 1;
-  transition: opacity var(--duration) var(--timing-function);
+  animation: line-in-header var(--duration) var(--timing-function);
 }
 
 .header-contacts-items {
@@ -565,8 +555,7 @@ pre {
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--duration) var(--timing-function),
-    visibility var(--duration) var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function);
 }
 
 .hidden {
@@ -575,11 +564,15 @@ pre {
   pointer-events: none;
 }
 
+.backdrop.hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
   background: var(--white-color);
@@ -588,7 +581,7 @@ pre {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  animation: modal var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .modal-button-close {
@@ -738,11 +731,11 @@ pre {
 
 /* Animation */
 
-@keyframes modal {
+@keyframes line-in-header {
   0% {
-    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
 }
