@@ -366,7 +366,7 @@
                     </svg>
                 </button>
                 <div class="container-modal">
-                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                     <form class="modal-form">
                         <div class="modal-form-part">
                             <label class="modal-form-text" for="modal-form-input-1">
@@ -376,7 +376,7 @@
                                 <svg class="modal-form-icon">
                                     <use href="./images/icons/sprite.svg#modal-name"></use>
                                 </svg>
-                                <input class="modal-form-input" type="text" name="user-name" id="modal-form-input-1">
+                                <input class="modal-form-input" type="text" name="user-name" id="modal-form-input-1" required>
                             </div>
                         </div>
                         <div class="modal-form-part">
@@ -387,7 +387,7 @@
                                 <svg class="modal-form-icon">
                                     <use href="./images/icons/sprite.svg#modal-phone"></use>
                                 </svg>
-                                <input class="modal-form-input" type="tel" name="user-phone" id="modal-form-input-2">
+                                <input class="modal-form-input" type="tel" name="user-phone" id="modal-form-input-2" required>
                             </div>
                         </div>
                         <div class="modal-form-part">
@@ -398,7 +398,7 @@
                                 <svg class="modal-form-icon">
                                     <use href="./images/icons/sprite.svg#modal-email"></use>
                                 </svg>
-                                <input class="modal-form-input" type="email" name="user-email" id="modal-form-input-3">
+                                <input class="modal-form-input" type="email" name="user-email" id="modal-form-input-3" required>
                             </div>
                         </div>
                         <div class="modal-form-part">
@@ -408,7 +408,9 @@
                             <textarea class="modal-form-textarea" name="user-comment" id="modal-form-textarea" placeholder="Введите текст"></textarea>
                         </div>
                         <div class="modal-form-part">
-                            <input type="checkbox" name="user-policy" id="modal-form-checkbox">
+                            <input class="modal-form-checkbox" type="checkbox" name="user-policy" id="modal-form-checkbox" required>
+                            <span class="modal-form-new-checkbox"></span>    
+                            <!-- <svg class="modal-form-new-checkbox"><use href="./images/icons/sprite.svg#modal-accept"></use></svg> -->
                             <label class="modal-form-text-checkbox" for="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a class="form-modal-policy-link" href="#">Условия договора</a></label>
                         </div>
                         <div class="modal-form-part">
@@ -419,6 +421,6 @@
             </div>
         </div>
         
-        <script src="./js/modal.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>
