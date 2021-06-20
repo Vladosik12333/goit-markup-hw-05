@@ -819,14 +819,6 @@ pre {
   }
 }
 
-.modal-form-text-checkbox {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--black-grey-color);
-  margin-left: 8.76px;
-}
-
 .form-modal-policy-link {
   color: var(--blue-color);
   text-decoration: underline;
@@ -987,4 +979,12 @@ pre {
   100% {
     opacity: 1;
   }
+}
+
+.modal-form-text-checkbox {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--black-grey-color);
+  margin-left: 8.76px;
 }
