@@ -13,34 +13,34 @@
     </head>
 
     <body>
-        <header class="header header--padding">
+        <header class="header">
             <!-- about name, nav and contacts -->
             <div class="container">
                 <nav class="header__nav">
-                    <a href="#" class="logo header__logo"><span class="apart-logo">Web</span>Studio</a>
-                    <ul class="nav-items">
-                        <li class="nav-link nav-link--margin">
-                            <a class="nav-link__text" href="./index.html">Студия</a>
+                    <a href="#" class="logo logo--black"><span class="apart-logo">Web</span>Studio</a>
+                    <ul class="nav-grid">
+                        <li class="nav-item nav-item--margin">
+                            <a class="nav-item__link" href="./index.html">Студия</a>
                         </li>
-                        <li class="nav-link nav-link--margin">
-                            <a class="nav-link__text nav-link__text--current" href="./portfolio.html">Портфолио</a>
+                        <li class="nav-item nav-item--margin">
+                            <a class="nav-item__link nav-item__link--current" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="nav-link">
-                            <a class="nav-link__text" href="#">Контакты</a>
+                            <a class="nav-item__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="header__contacts">
-                    <li class="contacts-link .contacts-link--margin">
-                        <a class="contacts-link__text" href="mail:info@devstudio.com">
-                            <svg class="contacts-link__mail">
+                    <li class="contacts-item">
+                        <a class="contacts-item__link contacts-item__link--margin" href="mail:info@devstudio.com">
+                            <svg class="contacts-item__mail">
                                 <use href="./images/icons/sprite.svg#mail"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="contacts-link">
-                        <a class="contacts-link__text" href="tel:+380961111111">
-                            <svg class="contacts-link__phone .contacts-link__phone--margin">
+                    <li class="contacts-item">
+                        <a class="contacts-item__link" href="tel:+380961111111">
+                            <svg class="contacts-item__phone">
                                 <use href="./images/icons/sprite.svg#phone"></use>
                             </svg>+38 096 111 11 11
                         </a>
@@ -215,46 +215,61 @@
         <footer class="footer">
             <!-- address and other info-->
             <div class="container">
-                <div class="footer-container">
-                    <a href="#" class="logo footer__logo"><span class="apart-logo">Web</span>Studio</a>
+                <div class="footer__address">
+                    <a href="#" class="logo logo--white"><span class="apart-logo">Web</span>Studio</a>
                     <address class="footer-address">
                         <ul>
-                            <li class="footer-address-li">
+                            <li class="footer-address__map">
                                 <a href="#">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="footer-contacts">
+                            <li class="footer-address__contacts footer-address__contacts--margin">
                                 <a href="mail:info@example.com">info@example.com</a>
                             </li>
-                            <li class="footer-contacts">
+                            <li class="footer-address__contacts footer-address__contacts--margin">
                                 <a href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="footer-container-media">
-                    <p class="footer-title">Присоединяйтесь</p>
-                    <div class="footer-container-icons">
-                        <a class="footer-item" href="#">
-                            <svg class="footer-icons">
+                <div class="footer__media">
+                    <p class="footer-media-title">Присоединяйтесь</p>
+                    <div class="footer-media">
+                        <a class="footer-media__link footer-media__link--margin" href="#">
+                            <svg class="footer-media__icon">
                                 <use href="./images/icons/sprite.svg#instagram"></use>
                             </svg>
                         </a>
-                        <a class="footer-item" href="#">
-                            <svg class="footer-icons">
+                        <a class="footer-media__link footer-media__link--margin" href="#">
+                            <svg class="footer-media__icon">
                                 <use href="./images/icons/sprite.svg#twitter"></use>
                             </svg>
                         </a>
-                        <a class="footer-item" href="#">
-                            <svg class="footer-icons">
+                        <a class="footer-media__link footer-media__link--margin" href="#">
+                            <svg class="footer-media__icon">
                                 <use href="./images/icons/sprite.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a class="footer-item" href="#">
-                            <svg class="footer-icons">
+                        <a class="footer-media__link" href="#">
+                            <svg class="footer-media__icon">
                                 <use href="./images/icons/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
                     </div>
+                </div>
+                <div class="footer__form">
+                    <form>
+                        <label for="footer-email">
+                            <p class="footer-form-text footer-form-text--margin">Подпишитесь на рассылку</p>
+                        </label>
+                        <div class="footer-form-submit">
+                            <input class="footer-form-submit__input" type="email" name="footer-email" placeholder="E-mail"
+                                id="footer-email">
+                            <button class="footer-form-submit__button" type="submit">Подписаться <svg
+                                    class="footer-form-submit__icon">
+                                    <use href="./images/icons/sprite.svg#footer-email"></use>
+                                </svg></button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </footer>
