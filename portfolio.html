@@ -13,43 +13,39 @@
     </head>
 
     <body>
-        <header class="header">
-            <!-- about name and contacts -->
+        <header class="header header--padding">
+            <!-- about name, nav and contacts -->
             <div class="container">
-                <div class="header-container">
-                    <nav class="header-nav">
-                        <a href="#" class="header-logo-site"><span class="header-logo-apart-site">Web</span>Studio</a>
-                        <ul class="header-nav-items">
-                            <li class="header-nav-button">
-                                <a class="header-nav-text" href="./index.html">Студия</a>
-                            </li>
-                            <li class="header-nav-button current">
-                                <a class="header-nav-text" href="./portfolio.html">Портфолио</a>
-                            </li>
-                            <li class="header-nav-button">
-                                <a class="header-nav-text" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <ul class="header-contacts-items">
-                        <li class="header-contacts-button">
-                            <a href="mail:info@devstudio.com">
-                                <svg class="header-contacts-mail">
-                                    <use href="./images/icons/sprite.svg#mail"></use>
-                                </svg>info@devstudio.com
-                            </a>
-                            <!-- <a href="mail:info@devstudio.com">info@devstudio.com</a> -->
+                <nav class="header__nav">
+                    <a href="#" class="logo header__logo"><span class="apart-logo">Web</span>Studio</a>
+                    <ul class="nav-items">
+                        <li class="nav-link nav-link--margin">
+                            <a class="nav-link__text" href="./index.html">Студия</a>
                         </li>
-                        <li class="header-contacts-button">
-                            <a href="tel:+380961111111">
-                                <svg class="header-contacts-phone">
-                                    <use href="./images/icons/sprite.svg#phone"></use>
-                                </svg>+38 096 111 11 11
-                            </a>
-                            <!-- <a href="tel:+380961111111">+38 096 111 11 11</a> -->
+                        <li class="nav-link nav-link--margin">
+                            <a class="nav-link__text nav-link__text--current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nav-link__text" href="#">Контакты</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
+                <ul class="header__contacts">
+                    <li class="contacts-link .contacts-link--margin">
+                        <a class="contacts-link__text" href="mail:info@devstudio.com">
+                            <svg class="contacts-link__mail">
+                                <use href="./images/icons/sprite.svg#mail"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts-link">
+                        <a class="contacts-link__text" href="tel:+380961111111">
+                            <svg class="contacts-link__phone .contacts-link__phone--margin">
+                                <use href="./images/icons/sprite.svg#phone"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
 
@@ -220,7 +216,7 @@
             <!-- address and other info-->
             <div class="container">
                 <div class="footer-container">
-                    <a href="#" class="footer-logo-site"><span class="footer-logo-apart-site">Web</span>Studio</a>
+                    <a href="#" class="logo footer__logo"><span class="apart-logo">Web</span>Studio</a>
                     <address class="footer-address">
                         <ul>
                             <li class="footer-address-li">
