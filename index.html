@@ -129,7 +129,7 @@
                                 <h3 class="four-item__name">Игорь Демьяненко</h3>
                                 <p class="four-item__position">Product Designer</p>
                             </div>
-                            <div class="media four-item__thumb">
+                            <div class="media media--section">
                                 <a class="media__link media__link--section" href="#">
                                     <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
@@ -158,7 +158,7 @@
                                 <h3 class="four-item__name">Ольга Репина</h3>
                                 <p class="four-item__position">Frontend Developer</p>
                             </div>
-                            <div class="media four-item__thumb">
+                            <div class="media media--section">
                                 <a class="media__link media__link--section" href="#">
                                     <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
@@ -187,7 +187,7 @@
                                 <h3 class="four-item__name">Николай Тарасов</h3>
                                 <p class="four-item__position">Marketing</p>
                             </div>
-                            <div class="media four-item__thumb">
+                            <div class="media media--section">
                                 <a class="media__link media__link--section" href="#">
                                     <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
@@ -216,7 +216,7 @@
                                 <h3 class="four-item__name">Михаил Ермаков</h3>
                                 <p class="four-item__position">UI Designer</p>
                             </div>
-                            <div class="media four-item__thumb">
+                            <div class="media media--section">
                                 <a class="media__link media__link--section" href="#">
                                     <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
@@ -351,63 +351,63 @@
             </div>
         </footer>
 
-        <div class="backdrop hidden" data-modal>
+        <div class="backdrop backdrop--hidden" data-modal>
             <!-- Modal -->
-            <div class="modal">
-                <button type="button" class="modal-button-close" data-modal-close>
-                    <svg class="modal-cross-close">
+            <div class="page">
+                <button class="page__btn-close" type="button" data-modal-close>
+                    <svg class="page__icon-close">
                         <use href="./images/icons/sprite.svg#cross-close"></use>
                     </svg>
                 </button>
-                <div class="container-modal">
-                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                    <form class="modal-form">
-                        <div class="modal-form-part">
-                            <label class="modal-form-text" for="modal-form-input-1">
+                <div class="page__modal">
+                    <p class="page__title">Оставьте свои данные, мы вам перезвоним</p>
+                    <form>
+                        <div class="form-apart form-apart--margin-top">
+                            <label class="form-apart__label" for="modal-form-input-1">
                                 Имя
                             </label>
-                            <div class="modal-form-svg-input">
-                                <svg class="modal-form-icon">
+                            <div class="form-apart__thumb">
+                                <svg class="form-apart__icon">
                                     <use href="./images/icons/sprite.svg#modal-name"></use>
                                 </svg>
-                                <input class="modal-form-input" type="text" name="user-name" id="modal-form-input-1" required>
+                                <input class="form-apart__input" type="text" name="user-name" id="modal-form-input-1" required>
                             </div>
                         </div>
-                        <div class="modal-form-part">
-                            <label class="modal-form-text" for="modal-form-input-2">
+                        <div class="form-apart">
+                            <label class="form-apart__label" for="modal-form-input-2">
                                 Телефон
                             </label>
-                            <div class="modal-form-svg-input">
-                                <svg class="modal-form-icon">
+                            <div class="form-apart__thumb">
+                                <svg class="form-apart__icon">
                                     <use href="./images/icons/sprite.svg#modal-phone"></use>
                                 </svg>
-                                <input class="modal-form-input" type="tel" name="user-phone" id="modal-form-input-2" required>
+                                <input class="form-apart__input" type="tel" name="user-phone" id="modal-form-input-2" required>
                             </div>
                         </div>
-                        <div class="modal-form-part">
-                            <label class="modal-form-text" for="modal-form-input-3">
+                        <div class="form-apart">
+                            <label class="form-apart__label" for="modal-form-input-3">
                                 Почта
                             </label>
-                            <div class="modal-form-svg-input">
-                                <svg class="modal-form-icon">
+                            <div class="form-apart__thumb">
+                                <svg class="form-apart__icon">
                                     <use href="./images/icons/sprite.svg#modal-email"></use>
                                 </svg>
-                                <input class="modal-form-input" type="email" name="user-email" id="modal-form-input-3" required>
+                                <input class="form-apart__input" type="email" name="user-email" id="modal-form-input-3" required>
                             </div>
                         </div>
-                        <div class="modal-form-part">
-                            <label class="modal-form-text" for="modal-form-textarea">
+                        <div class="form-apart">
+                            <label class="form-apart__label" for="modal-form-textarea">
                                 Комментарий
                             </label>
-                            <textarea class="modal-form-textarea" name="user-comment" id="modal-form-textarea" placeholder="Введите текст"></textarea>
+                            <textarea class="modal-textarea" name="user-comment" id="modal-form-textarea" placeholder="Введите текст"></textarea>
                         </div>
-                        <div class="modal-form-part">
-                            <input class="modal-form-checkbox" type="checkbox" name="user-policy" id="modal-form-checkbox" required>
-                            <span class="modal-form-new-checkbox"></span>    
-                            <label class="modal-form-text-checkbox" for="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a class="form-modal-policy-link" href="#">Условия договора</a></label>
+                        <div class="form-apart form-apart--position">
+                            <input class="form-apart__checkbox" type="checkbox" name="user-policy" id="modal-form-checkbox" required>
+                            <span class="modal-checkbox-icon"></span>    
+                            <label class="modal-checkbox-label" for="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a class="form-apart__policy" href="#">Условия договора</a></label>
                         </div>
-                        <div class="modal-form-part">
-                            <button class="modal-form-button" type="submit">Отправить</button>
+                        <div class="form-apart form-apart--margin-none">
+                            <button class="form-apart__btn" type="submit">Отправить</button>
                         </div>
                     </form>
                 </div>
