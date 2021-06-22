@@ -19,14 +19,14 @@
                 <nav class="header__nav">
                     <a href="#" class="logo logo--black"><span class="apart-logo">Web</span>Studio</a>
                     <ul class="nav-grid">
-                        <li class="nav-item nav-item--margin">
-                            <a class="nav-item__link nav-item__link--current" href="./index.html">Студия</a>
+                        <li class="nav-grid__item nav-grid__item--margin">
+                            <a class="nav-grid__link nav-grid__link--current" href="./index.html">Студия</a>
                         </li>
-                        <li class="nav-item nav-item--margin">
-                            <a class="nav-item__link" href="./portfolio.html">Портфолио</a>
+                        <li class="nav-grid__item nav-grid__item--margin">
+                            <a class="nav-grid__link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav-link">
-                            <a class="nav-item__link" href="#">Контакты</a>
+                        <li class="nav-grid__item">
+                            <a class="nav-grid__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,49 +53,47 @@
             <!-- about info of site -->
             <section class="one-section">
                 <div class="container">
-                    <div class="container-one-section">
-                        <h1 class="one-section-title"> Эффективные решения
-                        <pre>для вашего бизнеса</pre></h1>
-                        <button type="button" class="one-section-button" data-modal-open><span class="one-section-button-content">Заказать услугу</span></button>
-                    </div>
+                    <h1 class="one-section__title"> Эффективные решения
+                    <pre>для вашего бизнеса</pre></h1>
+                    <button class="one-section__btn" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <section class="two-section">
                 <div class="container">
-                    <ul class="two-section-items">
-                        <li class="two-section-items-li">
-                            <a class="two-section-a">
-                                <svg class="two-section-icon"><use href="./images/icons/sprite.svg#antenna"></use></svg>
+                    <ul class="two-section__grid">
+                        <li class="two-item">
+                            <a class="two-item__link">
+                                <svg class="two-item__icon"><use href="./images/icons/sprite.svg#antenna"></use></svg>
                             </a>
-                            <h3 class="two-section-title">Внимание к деталям</h3>
-                            <p class="two-section-text">
+                            <h3 class="two-item__subtitle">Внимание к деталям</h3>
+                            <p class="two-item__text">
                                 Идейные соображения, а также начало повседневной работы по формированию позиции.
                             </p>
                         </li>
-                        <li class="two-section-items-li">
-                            <a class="two-section-a">
-                                <svg class="two-section-icon"><use href="./images/icons/sprite.svg#clock"></use></svg>
+                        <li class="two-item">
+                            <a class="two-item__link">
+                                <svg class="two-item__icon"><use href="./images/icons/sprite.svg#clock"></use></svg>
                             </a>
-                            <h3 class="two-section-title">Пунктуальность</h3>
-                            <p class="two-section-text">
+                            <h3 class="two-item__subtitle">Пунктуальность</h3>
+                            <p class="two-item__text">
                                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                             </p>
                         </li>
-                        <li class="two-section-items-li">
-                            <a class="two-section-a">
-                                <svg class="two-section-icon"><use href="./images/icons/sprite.svg#diagram"></use></svg>
+                        <li class="two-item">
+                            <a class="two-item__link">
+                                <svg class="two-item__icon"><use href="./images/icons/sprite.svg#diagram"></use></svg>
                             </a>
-                            <h3 class="two-section-title">Планирование</h3>
-                            <p class="two-section-text">
+                            <h3 class="two-item__subtitle">Планирование</h3>
+                            <p class="two-item__text">
                                 Равным образом консультация с широким активом в значительной степени обуславливает.
                             </p>
                         </li>
-                        <li class="two-section-items-li">
-                            <a class="two-section-a">
-                                <svg class="two-section-icon"><use href="./images/icons/sprite.svg#astronaut"></use></svg>
+                        <li class="two-item">
+                            <a class="two-item__link">
+                                <svg class="two-item__icon"><use href="./images/icons/sprite.svg#astronaut"></use></svg>
                             </a>
-                            <h3 class="two-section-title">Современные технологии</h3>
-                            <p class="two-section-text">
+                            <h3 class="two-item__subtitle">Современные технологии</h3>
+                            <p class="two-item__text">
                                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                             </p>
                         </li>
@@ -104,138 +102,138 @@
             </section>
             <section class="three-section">
                 <div class="container">
-                    <h2 class="three-four-sections-title">Чем мы занимаемся</h2>
-                    <ul class="three-section-items">
-                        <li class="three-section-items-li">
+                    <h2 class="section-title">Чем мы занимаемся</h2>
+                    <ul class="three-section__grid">
+                        <li class="three-item">
                             <img src="./images/work1.jpg" alt="Рабочие процессы нашей команды" width="370" />
-                            <p class="three-section-items-li-text" >Десктопные приложения</p>
+                            <p class="three-item__subtitle" >Десктопные приложения</p>
                         </li>
-                        <li class="three-section-items-li">
+                        <li class="three-item">
                             <img src="./images/work2.jpg" alt="Рабочие процессы нашей команды" width="370" />
-                            <p class="three-section-items-li-text" >Мобильные приложения</p>
+                            <p class="three-item__subtitle" >Мобильные приложения</p>
                         </li>
-                        <li class="three-section-items-li">
+                        <li class="three-item">
                             <img src="./images/work3.jpg" alt="Рабочие процессы нашей команды" width="370" />
-                            <p class="three-section-items-li-text" >Дизайнерские решения</p>
+                            <p class="three-item__subtitle" >Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="four-section">
                 <div class="container">
-                    <h2 class="three-four-sections-title">Наша команда</h2>
-                    <ul class="four-section-items">
-                        <li class="four-section-items-li">
+                    <h2 class="section-title">Наша команда</h2>
+                    <ul class="four-section__grid">
+                        <li class="four-item">
                             <img src="./images/emp1.jpg" alt="Работник 1" width="270" />
-                            <div class="four-section-name-and-position">
-                                <h3 class="four-section-name">Игорь Демьяненко</h3>
-                                <p class="four-section-position">Product Designer</p>
+                            <div class="four-item__thumb">
+                                <h3 class="four-item__name">Игорь Демьяненко</h3>
+                                <p class="four-item__position">Product Designer</p>
                             </div>
-                            <div class="four-container-icons">
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                            <div class="media four-item__thumb">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#twitter"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#linkedin"></use>
                                     </svg>
                                 </a>
                             </div>
                         </li>
-                        <li class="four-section-items-li">
+                        <li class="four-item">
                             <img src="./images/emp2.jpg" alt="Работник 2" width="270" />
-                            <div class="four-section-name-and-position">
-                                <h3 class="four-section-name">Ольга Репина</h3>
-                                <p class="four-section-position">Frontend Developer</p>
+                            <div class="four-item__thumb">
+                                <h3 class="four-item__name">Ольга Репина</h3>
+                                <p class="four-item__position">Frontend Developer</p>
                             </div>
-                            <div class="four-container-icons">
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                            <div class="media four-item__thumb">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#twitter"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#linkedin"></use>
                                     </svg>
                                 </a>
                             </div>
                         </li>
-                        <li class="four-section-items-li">
+                        <li class="four-item">
                             <img src="./images/emp3.jpg" alt="Работник 3" width="270" />
-                            <div class="four-section-name-and-position">
-                                <h3 class="four-section-name">Николай Тарасов</h3>
-                                <p class="four-section-position">Marketing</p>
+                            <div class="four-item__thumb">
+                                <h3 class="four-item__name">Николай Тарасов</h3>
+                                <p class="four-item__position">Marketing</p>
                             </div>
-                            <div class="four-container-icons">
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                            <div class="media four-item__thumb">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#twitter"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#linkedin"></use>
                                     </svg>
                                 </a>
                             </div>
                         </li>
-                        <li class="four-section-items-li">
+                        <li class="four-item">
                             <img src="./images/emp4.jpg" alt="Работник 4" width="270" />
-                            <div class="four-section-name-and-position">
-                                <h3 class="four-section-name">Михаил Ермаков</h3>
-                                <p class="four-section-position">UI Designer</p>
+                            <div class="four-item__thumb">
+                                <h3 class="four-item__name">Михаил Ермаков</h3>
+                                <p class="four-item__position">UI Designer</p>
                             </div>
-                            <div class="four-container-icons">
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                            <div class="media four-item__thumb">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#twitter"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a four-section-a-margin" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
-                                <a class="four-section-a" href="#">
-                                    <svg class="four-section-icon">
+                                <a class="media__link media__link--section" href="#">
+                                    <svg class="media__icon media__icon--section">
                                         <use href="./images/icons/sprite.svg#linkedin"></use>
                                     </svg>
                                 </a>
@@ -246,46 +244,46 @@
             </section>
             <section class="five-section">
                 <div class="container">
-                    <h2 class="five-section-title">Постоянные клиенты</h2>
-                    <ul class="five-section-items">
+                    <h2 class="section-title">Постоянные клиенты</h2>
+                    <ul class="five-grid">
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company1"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company2"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company3"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company4"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company5"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="five-section-a" href="#">
-                                <svg class="five-section-icon">
+                            <a class="five-grid__link" href="#">
+                                <svg class="five-grid__icon">
                                     <use href="./images/icons/sprite.svg#company6"></use>
                                 </svg>
                             </a>
@@ -305,48 +303,48 @@
                             <li class="footer-address__map">
                                 <a href="#">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="footer-address__contacts .footer-address__contacts--margin">
+                            <li class="footer-address__contacts">
                                 <a href="mail:info@example.com">info@example.com</a>
                             </li>
-                            <li class="footer-address__contacts .footer-address__contacts--margin">
+                            <li class="footer-address__contacts">
                                 <a href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
                 <div class="footer__media">
-                    <p class="footer-media-title">Присоединяйтесь</p>
-                    <div class="footer-media">
-                        <a class="footer-media__link footer-media__link--margin" href="#">
-                            <svg class="footer-media__icon">
+                    <p class="footer-title">Присоединяйтесь</p>
+                    <div class="media">
+                        <a class="media__link media__link--margin" href="#">
+                            <svg class="media__icon">
                                 <use href="./images/icons/sprite.svg#instagram"></use>
                             </svg>
                         </a>
-                        <a class="footer-media__link footer-media__link--margin" href="#">
-                            <svg class="footer-media__icon">
+                        <a class="media__link media__link--margin" href="#">
+                            <svg class="media__icon">
                                 <use href="./images/icons/sprite.svg#twitter"></use>
                             </svg>
                         </a>
-                        <a class="footer-media__link footer-media__link--margin" href="#">
-                            <svg class="footer-media__icon">
+                        <a class="media__link media__link--margin" href="#">
+                            <svg class="media__icon">
                                 <use href="./images/icons/sprite.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a class="footer-media__link" href="#">
-                            <svg class="footer-media__icon">
+                        <a class="media__link" href="#">
+                            <svg class="media__icon">
                                 <use href="./images/icons/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="footer__form">
-                    <form>
-                        <label for="footer-email">
-                            <p class="footer-form-text footer-form-text--margin">Подпишитесь на рассылку</p>
+                    <form class="footer-form">
+                        <label for="footer-form__label">
+                            <p class="footer-title">Подпишитесь на рассылку</p>
                         </label>
-                        <div class="footer-form-submit">
-                            <input class="footer-form-submit__input" type="email" name="footer-email" placeholder="E-mail" id="footer-email">
-                            <button class="footer-form-submit__button" type="submit">Подписаться <svg class="footer-form-submit__icon"><use href="./images/icons/sprite.svg#footer-email"></use></svg></button>
+                        <div class="footer-form__thumb">
+                            <input class="footer-form__input" type="email" name="footer-email" placeholder="E-mail" id="footer-email">
+                            <button class="footer-form__btn" type="submit">Подписаться <svg class="footer-form__icon"><use href="./images/icons/sprite.svg#footer-email"></use></svg></button>
                         </div>
                     </form>
                 </div>

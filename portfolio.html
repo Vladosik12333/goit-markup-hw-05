@@ -19,14 +19,14 @@
                 <nav class="header__nav">
                     <a href="#" class="logo logo--black"><span class="apart-logo">Web</span>Studio</a>
                     <ul class="nav-grid">
-                        <li class="nav-item nav-item--margin">
-                            <a class="nav-item__link" href="./index.html">Студия</a>
+                        <li class="nav-grid__item nav-grid__item--margin">
+                            <a class="nav-grid__link" href="./index.html">Студия</a>
                         </li>
-                        <li class="nav-item nav-item--margin">
-                            <a class="nav-item__link nav-item__link--current" href="./portfolio.html">Портфолио</a>
+                        <li class="nav-grid__item nav-grid__item--margin">
+                            <a class="nav-grid__link nav-grid__link--current" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav-link">
-                            <a class="nav-item__link" href="#">Контакты</a>
+                        <li class="nav-grid__item">
+                            <a class="nav-grid__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -222,17 +222,17 @@
                             <li class="footer-address__map">
                                 <a href="#">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="footer-address__contacts footer-address__contacts--margin">
+                            <li class="footer-address__contacts">
                                 <a href="mail:info@example.com">info@example.com</a>
                             </li>
-                            <li class="footer-address__contacts footer-address__contacts--margin">
+                            <li class="footer-address__contacts">
                                 <a href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
                 <div class="footer__media">
-                    <p class="footer-media-title">Присоединяйтесь</p>
+                    <p class="footer-title">Присоединяйтесь</p>
                     <div class="footer-media">
                         <a class="footer-media__link footer-media__link--margin" href="#">
                             <svg class="footer-media__icon">
@@ -257,15 +257,14 @@
                     </div>
                 </div>
                 <div class="footer__form">
-                    <form>
-                        <label for="footer-email">
-                            <p class="footer-form-text footer-form-text--margin">Подпишитесь на рассылку</p>
+                    <form class="footer-form">
+                        <label for="footer-form__label">
+                            <p class="footer-title">Подпишитесь на рассылку</p>
                         </label>
-                        <div class="footer-form-submit">
-                            <input class="footer-form-submit__input" type="email" name="footer-email" placeholder="E-mail"
+                        <div class="footer-form__thumb">
+                            <input class="footer-form__input" type="email" name="footer-email" placeholder="E-mail"
                                 id="footer-email">
-                            <button class="footer-form-submit__button" type="submit">Подписаться <svg
-                                    class="footer-form-submit__icon">
+                            <button class="footer-form__btn" type="submit">Подписаться <svg class="footer-form__icon">
                                     <use href="./images/icons/sprite.svg#footer-email"></use>
                                 </svg></button>
                         </div>
