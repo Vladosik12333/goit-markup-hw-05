@@ -1,7 +1,5 @@
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
-/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
-
 pre {
   font-family: inherit;
   font-weight: inherit;
@@ -43,8 +41,7 @@ p {
 
 code,
 kbd,
-samp,
-pre {
+samp {
   font-family: "Open Sans", sans-serif;
   /* font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; 1 */
   font-size: 1em; /* 2 */
